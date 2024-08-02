@@ -5,24 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
     <main>
-        <div id="img"></div>
-        <div id="login">
-            <form action="">
+        <section id="login">
+            <div id="img">
+            </div>
+            <div id="form">
                 <h2>Login</h2>
                 <p>Seja bem-vindo novamente. Faça o login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
-                <p>
-                    <label for="inome">Nome: </label>
-                    <input type="text" name="nome" id="inome">
-                </p>
-                <p>
-                    <label for="isenha">Senha: </label>
-                    <input type="text" name="senha" id="isenha">
-                </p>
-            </form>
-        </div>
+                <form action="">
+                    <div id="nome" class="caixa">
+                        <label for="inome">Nome: </label>
+                        <input type="text" name="nome" id="inome">
+                    </div>
+                    <div id="senha" class="caixa">
+                        <label for="isenha">Senha: </label>
+                        <input type="text" name="senha" id="isenha">
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 </body>
 </html>
