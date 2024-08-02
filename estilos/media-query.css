@@ -6,6 +6,28 @@
     Small screens, laptops – 1024px até 1280px.
     Desktops, large screens, TV – 1280px*/
 
+:root {
+    --cor1: #A64B37;
+    --cor2: #BFA18F;
+    --cor3: #735645;
+    --cor4: #D9D4D0;
+    --cor5: #F26430;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: linear-gradient(to bottom, var(--cor1), var(--cor5));
+    }
+
+    section#login > div#form {
+        position: relative;
+        top: 50%;
+        transform: translate(0%,-50%);
+    }
+}
+
+    
+
 @media screen and (min-width: 768px) and (max-width: 1024px) { /*tablet*/
     section#login {
         width: 500px;
@@ -22,6 +44,8 @@
         float: right;
         width: 70%;
     }
+
+
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) { /*desktop*/
