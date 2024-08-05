@@ -29,7 +29,15 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) { /*tablet*/
     section#login {
         width: 500px;
-        height: 300px;
+        height: 330px;
+    }
+
+    section#login > div#form > h2 {
+        font-size: 1.2em;
+    }
+
+    section#login > div#form > p {
+        font-size: 1em;
     }
 
     section#login > div#img {
@@ -48,8 +56,16 @@
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) { /*desktop*/
     section#login {
-        width: 700px;
-        height: 400px;
+        width: 600px;
+        height: 360px;
+    }
+
+    section#login > div#form > h2 {
+        font-size: 1.4em;
+    }
+
+    section#login > div#form > p {
+        font-size: 1.2em;
     }
 
     section#login > div#img {
@@ -67,12 +83,25 @@
 @media screen and (min-width: 1281px) { /*tv*/
     section#login {
         width: 800px;
-        height: 500px;
+        height: 400px;
+    }
+
+    section#login > div#form > h2 {
+        font-size: 1.5em;
+    }
+
+    section#login > div#form > p {
+        font-size: 1.3em;
+    }
+
+    section#login > div#img {
+        float: right;
+        width: 45%;
+        height: 100%;
     }
 
     section#login > div#form {
-        position: relative;
-        top: 25%;
-        transform: translate(0%,-50%);
+        float: left;
+        width: 55%;
     }
 }

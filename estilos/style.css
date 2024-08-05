@@ -23,8 +23,6 @@ body {
     background-color: var(--cor1);
 }
 
-
-
 main {
     position: relative;
     width: 100vw;
@@ -33,7 +31,7 @@ main {
 
 section#login {
     width: 270px;
-    height: 450px;
+    height: 480px;
     display: block;
     position: absolute;
     top: 50%;
@@ -63,19 +61,42 @@ section#login > div#form {
 
 section#login > div#form > h2 {
     text-align: center;
+    margin-bottom: 5px;
 }
 
 section#login > div#form > p {
     font-size: 0.8em;
 }
 
-/*div.caixa {
+div.caixa {
     color: white;
-    border-radius: 25px;
+    border-radius: 10px;
+    display: block;
     background-color: var(--cor1);
-    padding: 4px;
+    height: 35px;
+    padding: 4px 0;
     margin: 10px 0;
-}*/
+}
+
+div.caixa > label > span {
+    font-size: 2em;
+    width: 40px;
+    text-align: center;
+}
+
+input {
+    border: none;
+    height: 115%;
+    width: calc(100% - 45px);
+    transform: translateY(-40%);
+    border-radius: 10px;
+    background-color: #BFA18F;
+    font-size: 1em;
+}
+
+input:focus-within {
+    background-color: white;
+}
 
 #ienviar {
     background-color: var(--cor5);
@@ -88,6 +109,8 @@ section#login > div#form > p {
     display: block;
     width: 100%;
     height: 35px;
+    display: block;
+    transform: translateY(0);
 }
 
 #ienviar:hover {
@@ -97,19 +120,24 @@ section#login > div#form > p {
 
 #iesq {
     text-decoration: none;
+    display: block;
     background-color: var(--cor5);
     border-radius: 5px;
-    padding: 0px 5px 5px 4px;
+    padding: 6px 5px 0 4px;
     color: white;
     font-size: 1em;
     display: block;
     width: 100%;
     text-align: center;
-    margin-top: 3px;
     height: 35px;
+    margin-top: 5px;
 }
 
 #iesq:hover {
     background-color: #af4924;
     transition: 300ms;
+}
+
+#iesq > span {
+    font-size: 0.8em;
 }
