@@ -26,8 +26,6 @@
     }
 }
 
-    
-
 @media screen and (min-width: 768px) and (max-width: 1024px) { /*tablet*/
     section#login {
         width: 500px;
@@ -72,5 +70,9 @@
         height: 500px;
     }
 
-
+    section#login > div#form {
+        position: relative;
+        top: 25%;
+        transform: translate(0%,-50%);
+    }
 }

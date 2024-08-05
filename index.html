@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <main>
@@ -17,19 +16,21 @@
             <div id="form">
                 <h2>Login</h2>
                 <p>Seja bem-vindo novamente. Faça o login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
-                <form action="">
+                <form action="" method="POST" autocomplete="on">
                     <div id="nome" class="caixa">
                         <label for="inome"><span class="material-symbols-outlined">
                             person
                             </span> </label>
-                        <input type="text" name="nome" id="inome">
+                        <input type="text" name="nome" id="inome" autocomplete="email" required minlength="8">
                     </div>
                     <div id="senha" class="caixa">
                         <label for="isenha"><span class="material-symbols-outlined">
                             key
                             </span> </label>
-                        <input type="text" name="senha" id="isenha">
+                        <input type="text" name="senha" id="isenha" autocomplete="current-password" required minlength="8">
                     </div>
+                    <input type="submit" value="Entrar" id="ienviar">
+                    <a href="" id="iesq">Esqueci minha senha <span class="material-symbols-outlined">mail</span></a>
                 </form>
             </div>
         </section>
